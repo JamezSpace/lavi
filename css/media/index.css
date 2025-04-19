@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 426px) {
+    .heros {
+        .hero-btns-container {
+            flex-wrap: wrap;
+        }
+        .hero-btns-container a {
+            width: 100%;
+        }
+    }
+    .swiper {
+        .swiper-button-prev {
+            left: 5px;
+        }
+        .swiper-button-next {
+            right: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .quick-navs-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .swiper {
+        .swiper-button-prev {
+            left: 2.5px;
+        }
+        .swiper-button-next {
+            right: 2.5px;
+        }
+    }
+}

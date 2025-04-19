@@ -1,0 +1,1 @@
+- Integrate gsap such that whenever the testimonials sectionn is in view, every surrounding section should either be blurred out or faded (opacity)

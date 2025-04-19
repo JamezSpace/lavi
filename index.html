@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles/index.css">
+    <link rel="stylesheet" href="./css/media/index.css">
+    <title>Lavi - The EduPlace</title>
+</head>
+
+<body>
+    <header class="nav-container flex">
+        <a href="" class="logo">
+            <img src="" alt="Lavi's logo">
+        </a>
+        <nav class="flex">
+            <a href="/">home</a>
+            <a href="/about">about</a>
+            <a href="/#services-section-container">services</a>
+            <a href="/#subjects-section-container">subjects</a>
+            <a href="/#testimonials-section-container">testimonials</a>
+            <a href="#contact-section-container" class="btn btn-primary">contact us</a>
+        </nav>
+        <button type="button" id="toggle-nav-bar" aria-label="this is the hamburger menu to toggle collapsed nav bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 8.5h16m-16 7h16" color="currentColor"/></svg>
+        </button>
+    </header>
+    <section class="heros flex">
+        <h1 class="text-gradient">Personalized tutoring that makes a difference</h1>
+        <p>We help secondary school students unlock their full potential - at home or online, exam year or not</p>
+        <div class="hero-btns-container flex">
+            <a href="" class="btn btn-primary">book a free consultation</a>
+            <a href="" class="btn btn-secondary">explore services</a>
+        </div>
+    </section>
+    <div class="about-section-container">
+        <section class="subheading-text">
+            <h2 class="section-descriptor">about our tutoring approach</h2>
+            <p>With years of experience helping students achieve academic excellence, our personalised tutoring approach
+                focuses on building confidence, developing critical thinking skills, and mastering subject matter</p>
+        </section>
+        <section class="stats-container flex">
+            <article class="stat">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <rect width="16" height="16" fill="none" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0.75"
+                            d="M14.25 9.25V6L8 2.75L1.75 6L8 9.25l3.25-1.5v3.5c0 1-1.5 2-3.25 2s-3.25-1-3.25-2v-3.5" />
+                    </svg>
+                </div>
+                <h3>qualified tutor</h3>
+                <p>Experienced with qualifications in education and subject expertise</p>
+            </article>
+            <article class="stat">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="none" />
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="m12.6 11.503l3.891 3.891l-.848.849L11.4 12V6h1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6" />
+                    </svg>
+                </div>
+                <h3>flexible scheduling</h3>
+                <p>Sessions available evenings, weekends, and during school holidays.</p>
+            </article>
+            <article class="stat">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="none" />
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1">
+                            <path d="M18 21a8 8 0 0 0-16 0" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+                        </g>
+                    </svg>
+                </div>
+                <h3>personalized plan</h3>
+                <p>Customized learning plans tailored to individual student needs.</p>
+            </article>
+            <article class="stat">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="none" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1"
+                            d="m7.171 12.906l-2.153 6.411l2.672-.89l1.568 2.34l1.825-5.183m5.73-2.678l2.154 6.411l-2.673-.89l-1.568 2.34l-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.68 1.68 0 0 1 2.64 0a1.68 1.68 0 0 0 1.515.628a1.68 1.68 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.68 1.68 0 0 1 0 2.639a1.68 1.68 0 0 0-.628 1.515a1.68 1.68 0 0 1-1.866 1.866a1.68 1.68 0 0 0-1.516.628a1.68 1.68 0 0 1-2.639 0a1.68 1.68 0 0 0-1.515-.628a1.68 1.68 0 0 1-1.867-1.866a1.68 1.68 0 0 0-.627-1.515a1.68 1.68 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.68 1.68 0 0 1 9.165 4.3M14 9a2 2 0 1 1-4 0a2 2 0 0 1 4 0" />
+                    </svg>
+                </div>
+                <h3>track record</h3>
+                <p>Proven success helping students achieve excellent exam results</p>
+            </article>
+        </section>
+        <a href="/about">click to see my teaching philosophy...</a>
+    </div>
+    <div class="services-section-container" id="services-section-container">
+        <section class="subheading-text">
+            <h2 class="section-descriptor">our tutoring services</h2>
+            <p>We provide flexible tutoring options to meet diverse learning needs. Choose between online or in-person
+                sessions with specialized focus on exam preparation</p>
+        </section>
+        <section class="services-container flex">
+            <article class="service">
+                <div class="article-descriptor">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 28 28">
+                            <rect width="28" height="28" fill="none" />
+                            <path fill="currentColor"
+                                d="M6.754 5a2.75 2.75 0 0 0-2.75 2.75v8.5A2.75 2.75 0 0 0 6.754 19h14.5a2.75 2.75 0 0 0 2.75-2.75v-8.5A2.75 2.75 0 0 0 21.254 5zm-1.25 2.75c0-.69.56-1.25 1.25-1.25h14.5c.69 0 1.25.56 1.25 1.25v8.5c0 .69-.56 1.25-1.25 1.25h-14.5c-.69 0-1.25-.56-1.25-1.25zM2.754 20.5a.75.75 0 0 0 0 1.5H25.25a.75.75 0 0 0 0-1.5z" />
+                        </svg>
+                    </span>
+                    <h3>online tutoring</h3>
+                </div>
+                <p>Learn from the comfort of your home with our interactive virtual sessions. Our online platform
+                    includes screen sharing, digital whiteboard, and collaborative tools.</p>
+                <ul>
+                    <li>Interactive video sessions with screen sharing</li>
+                    <li>Digital resources and practice materials</li>
+                    <li>Flexible scheduling for busy students</li>
+                    <li>Recorded sessions for review (optional)</li>
+                </ul>
+                <a href="/contact" class="btn">book online session</a>
+            </article>
+            <article class="service">
+                <div class="article-descriptor">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                            <rect width="256" height="256" fill="none" />
+                            <path fill="currentColor"
+                                d="m219.31 108.68l-80-80a16 16 0 0 0-22.62 0l-80 80A15.87 15.87 0 0 0 32 120v96a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-56h32v56a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-96a15.87 15.87 0 0 0-4.69-11.32M208 208h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48v-88l80-80l80 80Z" />
+                        </svg>
+                    </span>
+                    <h3>in-home tutoring</h3>
+                </div>
+                <p>Face-to-face sessions at your home for a personalized learning experience. In-person tutoring allows
+                    for hands-on guidance and immediate feedback.</p>
+                <ul>
+                    <li>One-on-one focused attention</li>
+                    <li>Physical learning materials and resources</li>
+                    <li>Personalized learning environment</li>
+                    <li>Available in select locations</li>
+                </ul>
+                <a href="/contact" class="btn">book in-home session</a>
+            </article>
+            <article class="service">
+                <div class="article-descriptor">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1"
+                                d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13m9-13v13m9-13v13" />
+                        </svg>
+                    </span>
+                    <h3>exam preparation</h3>
+                </div>
+                <p>Specialized coaching for students in exam years. Our structured approach helps students master exam
+                    techniques and content for optimal performance.</p>
+                <ul>
+                    <li>Past paper practice with expert feedback</li>
+                    <li>Exam technique and time management strategies</li>
+                    <li>Subject-specific revision plans</li>
+                    <li>Stress management and confidence building</li>
+                </ul>
+                <a href="/contact" class="btn">prepare for exams</a>
+            </article>
+            <article class="service">
+                <div class="article-descriptor">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" />
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1">
+                                <path d="M18 21a8 8 0 0 0-16 0" />
+                                <circle cx="10" cy="8" r="5" />
+                                <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+                            </g>
+                        </svg>
+                    </span>
+                    <h3>small group sessions</h3>
+                </div>
+                <p>Learn together with peers at a more affordable rate. Small group sessions (2-4 students) provide
+                    collaborative learning while maintaining personalized attention.</p>
+                <ul>
+                    <li>Collaborative problem-solving</li>
+                    <li>Peer learning opportunities</li>
+                    <li>More affordable than one-on-one sessions</li>
+                    <li>Available online or in-person</li>
+                </ul>
+                <a href="/contact" class="btn">join a group</a>
+            </article>
+        </section>
+    </div>
+    <div class="subjects-section-container" id="subjects-section-container">
+        <section class="subheading-text">
+            <h2 class="section-descriptor">subjects we cover</h2>
+            <p>Comprehensive tutoring across a wide range of secondary school subjects for both exam and non-exam year
+                students.</p>
+        </section>
+        <section class="subjects-container flex">
+            <article class="subject" aria-label="science">
+                <h3>science</h3>
+                <ul>
+                    <li>physics</li>
+                    <li>chemistry</li>
+                    <li>biology</li>
+                </ul>
+            </article>
+            <article class="subject" aria-label="mathematics">
+                <h3>mathematics</h3>
+                <ul>
+                    <li>algebra</li>
+                    <li>geometry</li>
+                    <li>calculus</li>
+                    <li>advanced mathematics</li>
+                </ul>
+            </article>
+            <article class="subject" aria-label="humanities">
+                <h3>humanities</h3>
+                <ul>
+                    <li>history</li>
+                    <li>geography</li>
+                    <li>economics</li>
+                    <li>sociology</li>
+                </ul>
+            </article>
+            <article class="subject" aria-label="languages">
+                <h3>languages</h3>
+                <ul>
+                    <li>literature-in-writing</li>
+                    <li>english language</li>
+                </ul>
+            </article>
+        </section>
+        <p>Don't see the subject you need? Contact us to discuss your specific requirements.</p>
+        <a href="/contact" class="btn btn-secondary">inquire about other subjects</a>
+    </div>
+    <div class="testimonials-section-container" id="testimonials-section-container">
+        <section class="subheading-text">
+            <h2 class="section-descriptor">what our students say</h2>
+            <p>Hear from our students and parents about their experience with our tutoring services.</p>
+        </section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active" id="slide-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect width="16" height="16" fill="none" />
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M7.16 3.5C4.73 5.06 3.55 6.67 3.55 9.36c.16-.05.3-.05.44-.05c1.27 0 2.5.86 2.5 2.41c0 1.61-1.03 2.61-2.5 2.61c-1.9 0-2.99-1.52-2.99-4.25c0-3.8 1.75-6.53 5.02-8.42zm7 0c-2.43 1.56-3.61 3.17-3.61 5.86c.16-.05.3-.05.44-.05c1.27 0 2.5.86 2.5 2.41c0 1.61-1.03 2.61-2.5 2.61c-1.89 0-2.98-1.52-2.98-4.25c0-3.8 1.75-6.53 5.02-8.42l1.14 1.84z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>My son's grades improved dramatically after just a few months of tutoring. The personalized
+                        approach
+                        really made a difference in his confidence and exam performance.</p>
+                    <cite>Sarah J.</cite>
+                </div>
+                <div class="swiper-slide" id="slide-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect width="16" height="16" fill="none" />
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M7.16 3.5C4.73 5.06 3.55 6.67 3.55 9.36c.16-.05.3-.05.44-.05c1.27 0 2.5.86 2.5 2.41c0 1.61-1.03 2.61-2.5 2.61c-1.9 0-2.99-1.52-2.99-4.25c0-3.8 1.75-6.53 5.02-8.42zm7 0c-2.43 1.56-3.61 3.17-3.61 5.86c.16-.05.3-.05.44-.05c1.27 0 2.5.86 2.5 2.41c0 1.61-1.03 2.61-2.5 2.61c-1.89 0-2.98-1.52-2.98-4.25c0-3.8 1.75-6.53 5.02-8.42l1.14 1.84z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>The exam preparation sessions were invaluable. I learned effective study techniques and received
+                        detailed feedback on practice papers that helped me achieve an A in Mathematics.</p>
+                    <cite>Michael T.</cite>
+                </div>
+            </div>
+            <a class="swiper-nav swiper-button-prev" href="#slide-1"></a>
+            <a class="swiper-nav swiper-button-next" href="#slide-2"></a>
+        </div>
+    </div>
+    <div class="contact-section-container" id="contact-section-container">
+        <section class="subheading-text">
+            <h2 class="section-descriptor">contact us</h2>
+            <p>Have questions or ready to start tutoring? Reach out to us and we'll get back to you as soon as possible.
+            </p>
+        </section>
+        <div class="container">
+            <section class="contact-info"></section>
+            <form action="">
+                <h2>send us a message</h2>
+                <div class="row">
+                    <div class="field">
+                        <label for="name">full name</label>
+                        <div class="input-container" id="name">
+                            <span class="input-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path fill="currentColor" d="M229.19 213c-15.81-27.32-40.63-46.49-69.47-54.62a70 70 0 1 0-63.44 0C67.44 166.5 42.62 185.67 26.81 213a6 6 0 1 0 10.38 6c19.21-33.19 53.15-53 90.81-53s71.6 19.81 90.81 53a6 6 0 1 0 10.38-6M70 96a58 58 0 1 1 58 58a58.07 58.07 0 0 1-58-58"/></svg>
+                            </span>
+                            <input type="text" name="full_name" placeholder="your full name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">email address</label>
+                        <div class="input-container" id="email">
+                            <span class="input-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="currentColor" fill-rule="evenodd" d="m4.2 5.2l7.56 5.67a.4.4 0 0 0 .48 0L19.8 5.2zm16.6.75l-7.84 5.88a1.6 1.6 0 0 1-1.92 0L3.2 5.95V18.8h17.6zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1"/></svg>
+                            </span>
+                            <input type="email" name="email" placeholder="your email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="phone">phone number</label>
+                        <div class="input-container" id="phone-number">
+                            <span class="input-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="currentColor" d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.77 14.77 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5"/></svg>
+                            </span>
+                            <input type="text" name="phone_number" placeholder="your phone number">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="">service type</label>
+                        <span><input type="radio" id="service-type-exam" name="exam">exam preparation</span>
+                        <span><input type="radio" id="service-type-lesson" name="lesson">regular lessons</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="">learning mode</label>
+                        <span><input type="radio" id="service-mode-online" name="learning_mode">online</span>
+                        <span><input type="radio" id="service-mode-offline" name="learning_mode">offline</span>
+                    </div>
+                    <div class="field">
+                        <label for="student-year">student year</label>
+                        <select name="student_year" id="student-year">
+                            <option value="j3">jss3 (bece)</option>
+                            <option value="s3">sss3 (wassce)</option>
+                            <option value="others">others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="additional_information">your message</label>
+                        <textarea name="additional_information" id="additional_information"
+                            placeholder="tell us more about your requirements"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="flex">
+        <a href="/">
+            <img src="" alt="Lavi's logo">
+        </a>
+        <section class="quick-navs-container flex">
+            <article class="quick-nav-section">
+                <a href="/">home</a>
+                <a href="">about</a>
+                <a href="">services</a>
+                <a href="">subjects</a>
+                <a href="">contact</a>
+            </article>
+            <article class="quick-nav-section">
+                <a href="">online tutoring</a>
+                <a href="">home tutoring</a>
+                <a href="">exam preparation</a>
+            </article>
+            <article class="quick-nav-section">
+                <p class="flex" style="text-transform: lowercase;"><a href="mailto:">lavi@gmail.com</a></p>
+                <p class="flex"><a href="tel:">+2348138760473</a></p>
+                <p class="flex">24/7 Service</p>
+            </article>
+        </section>
+        <p>&copy; Lavi. All Rights Reserved</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
