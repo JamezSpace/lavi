@@ -12,3 +12,7 @@ function toggleNavBar() {
 document.querySelector(".nav-container nav").addEventListener("click", e => {
     toggleNavBar()
 })
+
+document.querySelector('.swiper-nav').addEventListener('click', e => {
+    console.log(e.target);    
+})
