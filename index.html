@@ -23,7 +23,11 @@
             <a href="#contact-section-container" class="btn btn-primary">contact us</a>
         </nav>
         <button type="button" id="toggle-nav-bar" aria-label="this is the hamburger menu to toggle collapsed nav bar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 8.5h16m-16 7h16" color="currentColor"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="none" />
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="M4 8.5h16m-16 7h16" color="currentColor" />
+            </svg>
         </button>
     </header>
     <section class="heros flex">
@@ -35,7 +39,7 @@
         </div>
     </section>
     <div class="about-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">about our tutoring approach</h2>
             <p>With years of experience helping students achieve academic excellence, our personalised tutoring approach
                 focuses on building confidence, developing critical thinking skills, and mastering subject matter</p>
@@ -95,7 +99,7 @@
         <a href="/about">click to see my teaching philosophy...</a>
     </div>
     <div class="services-section-container" id="services-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">our tutoring services</h2>
             <p>We provide flexible tutoring options to meet diverse learning needs. Choose between online or in-person
                 sessions with specialized focus on exam preparation</p>
@@ -193,7 +197,7 @@
         </section>
     </div>
     <div class="subjects-section-container" id="subjects-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">subjects we cover</h2>
             <p>Comprehensive tutoring across a wide range of secondary school subjects for both exam and non-exam year
                 students.</p>
@@ -237,13 +241,14 @@
         <a href="/contact" class="btn btn-secondary">inquire about other subjects</a>
     </div>
     <div class="testimonials-section-container" id="testimonials-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text left">
             <h2 class="section-descriptor">what our students say</h2>
             <p>Hear from our students and parents about their experience with our tutoring services.</p>
         </section>
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide active" id="slide-1">
+                <a class="swiper-nav swiper-button-prev" data-role="prev-slide"></a>
+                <div class="swiper-slide active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <rect width="16" height="16" fill="none" />
                         <path fill="currentColor" fill-rule="evenodd"
@@ -255,7 +260,7 @@
                         really made a difference in his confidence and exam performance.</p>
                     <cite>Sarah J.</cite>
                 </div>
-                <div class="swiper-slide" id="slide-2">
+                <div class="swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <rect width="16" height="16" fill="none" />
                         <path fill="currentColor" fill-rule="evenodd"
@@ -266,13 +271,12 @@
                         detailed feedback on practice papers that helped me achieve an A in Mathematics.</p>
                     <cite>Michael T.</cite>
                 </div>
+                <a class="swiper-nav swiper-button-next" data-role="next-slide"></a>
             </div>
-            <a class="swiper-nav swiper-button-prev" href="#slide-1"></a>
-            <a class="swiper-nav swiper-button-next" href="#slide-2"></a>
         </div>
     </div>
     <div class="contact-section-container" id="contact-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">contact us</h2>
             <p>Have questions or ready to start tutoring? Reach out to us and we'll get back to you as soon as possible.
             </p>
@@ -286,7 +290,11 @@
                         <label for="name">full name</label>
                         <div class="input-container" id="name">
                             <span class="input-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path fill="currentColor" d="M229.19 213c-15.81-27.32-40.63-46.49-69.47-54.62a70 70 0 1 0-63.44 0C67.44 166.5 42.62 185.67 26.81 213a6 6 0 1 0 10.38 6c19.21-33.19 53.15-53 90.81-53s71.6 19.81 90.81 53a6 6 0 1 0 10.38-6M70 96a58 58 0 1 1 58 58a58.07 58.07 0 0 1-58-58"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                                    <rect width="256" height="256" fill="none" />
+                                    <path fill="currentColor"
+                                        d="M229.19 213c-15.81-27.32-40.63-46.49-69.47-54.62a70 70 0 1 0-63.44 0C67.44 166.5 42.62 185.67 26.81 213a6 6 0 1 0 10.38 6c19.21-33.19 53.15-53 90.81-53s71.6 19.81 90.81 53a6 6 0 1 0 10.38-6M70 96a58 58 0 1 1 58 58a58.07 58.07 0 0 1-58-58" />
+                                </svg>
                             </span>
                             <input type="text" name="full_name" placeholder="your full name">
                         </div>
@@ -295,7 +303,11 @@
                         <label for="email">email address</label>
                         <div class="input-container" id="email">
                             <span class="input-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="currentColor" fill-rule="evenodd" d="m4.2 5.2l7.56 5.67a.4.4 0 0 0 .48 0L19.8 5.2zm16.6.75l-7.84 5.88a1.6 1.6 0 0 1-1.92 0L3.2 5.95V18.8h17.6zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="none" />
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="m4.2 5.2l7.56 5.67a.4.4 0 0 0 .48 0L19.8 5.2zm16.6.75l-7.84 5.88a1.6 1.6 0 0 1-1.92 0L3.2 5.95V18.8h17.6zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1" />
+                                </svg>
                             </span>
                             <input type="email" name="email" placeholder="your email">
                         </div>
@@ -306,7 +318,11 @@
                         <label for="phone">phone number</label>
                         <div class="input-container" id="phone-number">
                             <span class="input-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="currentColor" d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.77 14.77 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="none" />
+                                    <path fill="currentColor"
+                                        d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.77 14.77 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5" />
+                                </svg>
                             </span>
                             <input type="text" name="phone_number" placeholder="your phone number">
                         </div>
