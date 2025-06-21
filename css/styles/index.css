@@ -36,20 +36,26 @@
     }
 }
 
+.picture-bg {
+    /* background: linear-gradient(to bottom, rgb(255,255,255,1) , rgb(0,0,0,0.3)), url('../../img/edu-bg.jpg'); */
+    background: radial-gradient(farthest-side circle at 0% 0%,rgb(255,255,255,1) 0%, rgb(255,255,255,1) 50% 50%, rgb(255,255,255,0.3) 120% 120%), url(../../img/edu-bg.jpg);
+    background-size: contain;
+}
+
 .heros {
-    min-height: 80svh;
+    min-height: 95svh;
     padding: 10vh 30px;
-    text-align: center;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     text-transform: capitalize;
 
     h1 {
-        font-size: 2.25rem;
+        font-size: 2.75em;
     }
 
     p {
-        font-size: 1.05rem;
+        font-size: 1.05em;
         margin-block: 0.75rem;
         text-transform: none;
     }
@@ -71,7 +77,15 @@
     }
 
     p {
-        color: grey;
+        color: var(--primary-shade);
+    }
+
+    & ~ a.text {
+        opacity: 0.6;
+    }
+
+    & ~ a.text:hover {
+        opacity: 0.75;
     }
 }
 
@@ -121,6 +135,9 @@
     }
 }
 
+.about-section-container {
+    margin-block: 10vh;
+}
 .about-section-container>a {
     width: 100%;
     text-align: center;
