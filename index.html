@@ -14,39 +14,36 @@
 </head>
 
 <body>
-    <div class="picture-bg">
-        <header class="nav-container flex">
-            <a href="" class="logo">
-                <img src="./img/full_logo.svg" alt="Lavi's logo">
-            </a>
-            <nav class="flex">
-                <a href="/">home</a>
-                <a href="/about">about</a>
-                <a href="/#services-section-container">services</a>
-                <a href="/#subjects-section-container">subjects</a>
-                <a href="/#testimonials-section-container">testimonials</a>
-                <a href="#contact-section-container" class="btn btn-primary">contact us</a>
-            </nav>
-            <button type="button" id="toggle-nav-bar"
-                aria-label="this is the hamburger menu to toggle collapsed nav bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <rect width="24" height="24" fill="none" />
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="1" d="M4 8.5h16m-16 7h16" color="currentColor" />
-                </svg>
-            </button>
-        </header>
-        <section class="heros flex">
-            <h1 class="text-gradient font-dm-sans">Personalized tutoring <br> that makes a difference</h1>
-            <p>We help secondary school students unlock their full potential - at home or online, exam year or not</p>
-            <div class="hero-btns-container flex">
-                <a href="" class="btn btn-primary">book a free consultation</a>
-                <a href="" class="btn btn-secondary">explore services</a>
-            </div>
-        </section>
-    </div>
+    <header class="nav-container flex">
+        <a href="" class="logo">
+            <img src="" alt="Lavi's logo">
+        </a>
+        <nav class="flex">
+            <a href="/">home</a>
+            <a href="/about">about</a>
+            <a href="/#services-section-container">services</a>
+            <a href="/#subjects-section-container">subjects</a>
+            <a href="/#testimonials-section-container">testimonials</a>
+            <a href="#contact-section-container" class="btn btn-primary">contact us</a>
+        </nav>
+        <button type="button" id="toggle-nav-bar" aria-label="this is the hamburger menu to toggle collapsed nav bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="none" />
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="M4 8.5h16m-16 7h16" color="currentColor" />
+            </svg>
+        </button>
+    </header>
+    <section class="heros flex">
+        <h1 class="text-gradient">Personalized tutoring that makes a difference</h1>
+        <p>We help secondary school students unlock their full potential - at home or online, exam year or not</p>
+        <div class="hero-btns-container flex">
+            <a href="" class="btn btn-primary">book a free consultation</a>
+            <a href="" class="btn btn-secondary">explore services</a>
+        </div>
+    </section>
     <div class="about-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">about our tutoring approach</h2>
             <p>With years of experience helping students achieve academic excellence, our personalised tutoring approach
                 focuses on building confidence, developing critical thinking skills, and mastering subject matter</p>
@@ -106,7 +103,7 @@
         <a href="/about" class="text">click to see my teaching philosophy...</a>
     </div>
     <div class="services-section-container" id="services-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">our tutoring services</h2>
             <p>We provide flexible tutoring options to meet diverse learning needs. Choose between online or in-person
                 sessions with specialized focus on exam preparation</p>
@@ -204,7 +201,7 @@
         </section>
     </div>
     <div class="subjects-section-container" id="subjects-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">subjects we cover</h2>
             <p>Comprehensive tutoring across a wide range of secondary school subjects for both exam and non-exam year
                 students.</p>
@@ -248,13 +245,14 @@
         <a href="/contact" class="btn btn-secondary">inquire about other subjects</a>
     </div>
     <div class="testimonials-section-container" id="testimonials-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text left">
             <h2 class="section-descriptor">what our students say</h2>
             <p>Hear from our students and parents about their experience with our tutoring services.</p>
         </section>
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide active" id="slide-1">
+                <a class="swiper-nav swiper-button-prev" data-role="prev-slide"></a>
+                <div class="swiper-slide active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <rect width="16" height="16" fill="none" />
                         <path fill="currentColor" fill-rule="evenodd"
@@ -266,7 +264,7 @@
                         really made a difference in his confidence and exam performance.</p>
                     <cite>Sarah J.</cite>
                 </div>
-                <div class="swiper-slide" id="slide-2">
+                <div class="swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <rect width="16" height="16" fill="none" />
                         <path fill="currentColor" fill-rule="evenodd"
@@ -277,13 +275,12 @@
                         detailed feedback on practice papers that helped me achieve an A in Mathematics.</p>
                     <cite>Michael T.</cite>
                 </div>
+                <a class="swiper-nav swiper-button-next" data-role="next-slide"></a>
             </div>
-            <a class="swiper-nav swiper-button-prev" href="#slide-1"></a>
-            <a class="swiper-nav swiper-button-next" href="#slide-2"></a>
         </div>
     </div>
     <div class="contact-section-container" id="contact-section-container">
-        <section class="subheading-text">
+        <section class="subheading-text center">
             <h2 class="section-descriptor">contact us</h2>
             <p>Have questions or ready to start tutoring? Reach out to us and we'll get back to you as soon as possible.
             </p>
