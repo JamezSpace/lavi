@@ -10,7 +10,7 @@ let default_scrolltrigger_opts = {
     scrub: true,
     start: "clamp(top center)",
     end: "clamp(bottom center)"
-}
+}, about_hypertext
 
 document.fonts.ready.then(() => {
     let containers = gsap.utils.toArray(".split-text-container");
@@ -37,6 +37,24 @@ document.fonts.ready.then(() => {
             }
         });
     });
+
+    about_hypertext = SplitText.create(".text", {
+        type: "words, chars"
+    })
+    
+    stats_timeline.fromTo(about_hypertext.chars,
+    { scale: 1 },
+    {
+        duration: 1.5,
+        delay: 10,
+        scale: 1.5,
+        opacity: 1,
+        stagger: 0.05
+    }).to(about_hypertext.chars, {
+        duration: 1.5,
+        scale: 1,
+        stagger: 0.05
+    })
 });
 
 let stats_timeline = gsap.timeline({
@@ -60,24 +78,6 @@ stats_timeline.addLabel("boxes-anim")
         delay: 2,
         stagger: 0.75
     })
-
-let about_hypertext = SplitText.create(".text", {
-    type: "words, chars"
-})
-
-stats_timeline.fromTo(about_hypertext.chars,
-{ scale: 1 },
-{
-    duration: 1.5,
-    delay: 10,
-    scale: 1.5,
-    opacity: 1,
-    stagger: 0.05
-}).to(about_hypertext.chars, {
-    duration: 1.5,
-    scale: 1,
-    stagger: 0.05
-})
 
 services_timeline.addLabel("services-boxes-anim")
     .fromTo(".service", {

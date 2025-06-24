@@ -38,7 +38,7 @@
 
 .picture-bg {
     /* background: linear-gradient(to bottom, rgb(255,255,255,1) , rgb(0,0,0,0.3)), url('../../img/edu-bg.jpg'); */
-    background: radial-gradient(farthest-side circle at 0% 0%,rgb(255,255,255,1) 0%, rgb(255,255,255,1) 50% 50%, rgb(255,255,255,0.3) 120% 120%), url(../../img/edu-bg.jpg);
+    background: radial-gradient(farthest-side circle at 0% 0%, rgb(255, 255, 255, 1) 0%, rgb(255, 255, 255, 1) 50% 50%, rgb(255, 255, 255, 0.3) 120% 120%), url(../../img/edu-bg.jpg);
     background-size: contain;
 }
 
@@ -88,11 +88,11 @@
         color: var(--primary-shade);
     }
 
-    & ~ a.text {
+    &~a.text {
         opacity: 0.6;
     }
 
-    & ~ a.text:hover {
+    &~a.text:hover {
         opacity: 0.75;
     }
 }
@@ -146,12 +146,45 @@
 .about-section-container {
     margin-block: 10vh;
 }
+
 .about-section-container>a {
     width: 100%;
     text-align: center;
     display: inline-block;
     margin-inline: auto;
     margin-top: 20px;
+}
+
+.pseudo-black-pic-transitioner {
+    --hdr-gradient: linear-gradient(180deg in oklab,
+            rgb(100% 100% 100%) -1% -1%, rgb(0% 0% 0%) 94% 94%);
+    height: 50dvh;
+    background: var(--hdr-gradient);
+}
+
+.services-section-container {
+    --section-color: #fff;
+
+    padding-block: 5vh 10vh;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.75)), url('../../img/teacher-bg.webp');
+    background-size: cover;
+    color: var(--section-color);
+
+    .subheading-text p {
+        color: var(--section-color);
+    }
+}
+
+.glassmorph-with-image {
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.subjects-animation-pane {
+    height: 80vh;
+    padding: 30px;
 }
 
 .services-container,

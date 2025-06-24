@@ -16,7 +16,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 body {
@@ -62,6 +62,10 @@ input, textarea, select {
     font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
+}
+
+.text-bigger {
+    font-size: 1.75rem;
 }
 
 .btn {
